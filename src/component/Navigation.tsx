@@ -21,7 +21,7 @@ export default function Navigation({
         <div className="flex justify-between items-center">
           <button 
             onClick={() => scrollToSection('home')}
-            className="text-2xl font-light tracking-tight hover:text-blue-600 transition-colors"
+            className="text-2xl font-light tracking-tight hover:text-blue-600 transition-colors cursor-pointer"
           >
             Isiaka Adamu
           </button>

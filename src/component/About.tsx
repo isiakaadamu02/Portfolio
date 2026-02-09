@@ -19,6 +19,21 @@ export default function About() {
             all devices.
           </p>
           <p>
+            In my current role at Conduent, I develop and maintain frontend applications using React.js, Next.js, 
+            TypeScript, and Tailwind CSS, ensuring optimal performance across desktop and mobile platforms. 
+            I work closely with backend developers and product managers to translate requirements into scalable UI solutions, 
+            integrate RESTful APIs, and support applications throughout the full development lifecycle. Alongside development, 
+            I troubleshoot software and system issues, document and escalate complex technical problems, and provide training 
+            and demonstrations to improve user adoption and reduce recurring issues.
+          </p>
+          <p>
+            Previously at Adecco Staffing, I designed and supported frontend solutions for eCommerce, real estate, 
+            and financial platforms, where I focused on usability, performance, and stability. 
+            I collaborated with cross-functional teams, implemented SEO improvements, executed thorough testing, 
+            and resolved application issues to ensure reliable releases. Earlier roles in customer-facing environments 
+            strengthened my communication skills, empathy, and ability to explain technical concepts clearly to non-technical users.
+          </p>
+          <p>
             When I'm not coding, you'll find me exploring new design trends, contributing to open-source 
             projects, or learning about emerging technologies in the web development ecosystem.
           </p>
