@@ -1,4 +1,5 @@
 import { Github, ExternalLink } from 'lucide-react';
+import DashboardImg from "../assets/Dasboard.png"
 
 interface Project {
   id: number;
@@ -8,18 +9,20 @@ interface Project {
   github?: string;
   demo?: string;
   image: string;
+  loginDetails: string;
 }
 
 export default function Projects() {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'Full-stack e-commerce solution with React, Node.js, and PostgreSQL featuring real-time inventory management and secure payment processing.',
+      title: 'Employee Management System',
+      description: 'Full-stack employee management solution with React, Node.js, and MongoDB featuring real-time employee data management, which include the employee deptartments, leave management, salary and attendance management for both Admin and employee sections.',
       tech: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Stripe'],
-      github: 'https://github.com',
-      demo: 'https://demo.com',
-      image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f5f5f5"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="system-ui" font-size="18" fill="%23666"%3EProject Image%3C/text%3E%3C/svg%3E'
+      github: 'https://github.com/isiakaadamu02/EMS-frontend',
+      demo: 'https://ems-frontend-silk.vercel.app',
+      loginDetails: "email: admin@gmail.com, password: admin123",
+      image: DashboardImg
     },
     {
       id: 2,
@@ -28,6 +31,7 @@ export default function Projects() {
       tech: ['React', 'TypeScript', 'Tailwind', 'Firebase', 'WebSocket'],
       github: 'https://github.com',
       demo: 'https://demo.com',
+      loginDetails: "null",
       image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f5f5f5"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="system-ui" font-size="18" fill="%23666"%3EProject Image%3C/text%3E%3C/svg%3E'
     },
     {
@@ -36,6 +40,7 @@ export default function Projects() {
       description: 'SaaS application leveraging OpenAI API for content creation with custom templates, collaborative editing, and export functionality.',
       tech: ['Next.js', 'TypeScript', 'OpenAI', 'Prisma', 'TailwindCSS'],
       github: 'https://github.com',
+      loginDetails: "null",
       image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f5f5f5"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="system-ui" font-size="18" fill="%23666"%3EProject Image%3C/text%3E%3C/svg%3E'
     }
   ];
@@ -68,6 +73,9 @@ export default function Projects() {
                 </h3>
                 <p className="text-gray-600 mb-4 text-sm leading-relaxed">
                   {project.description}
+                </p>
+                <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                  {project.loginDetails}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tech.map((tech, idx) => (

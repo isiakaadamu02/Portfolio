@@ -71,10 +71,11 @@ export default function Hero({ scrollToSection }: HeroProps) {
         </div>
 
         <div className="flex justify-center space-x-6  animate-fadeInUp" style={{animationDelay: '0.4s'}}>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <a href="https://github.com/isiakaadamu02" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
             <Github size={24} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
+          <a href="https://www.linkedin.com/in/isiaka-adamu-b550203b0
+" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-900 transition-colors">
             <Linkedin size={24} />
           </a>
           <a href="mailto:isiakaadamu161@gmail.com" className="text-gray-600 hover:text-gray-900 transition-colors">
