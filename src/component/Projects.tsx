@@ -5,7 +5,7 @@ interface Project {
   id: number;
   title: string;
   description: string;
-  tech: string[];
+  tech?: string[];
   github?: string;
   demo?: string;
   image: string;
@@ -36,10 +36,9 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: 'AI Content Generator',
-      description: 'SaaS application leveraging OpenAI API for content creation with custom templates, collaborative editing, and export functionality.',
-      tech: ['Next.js', 'TypeScript', 'OpenAI', 'Prisma', 'TailwindCSS'],
-      github: 'https://github.com',
+      title: 'Conduent Website',
+      description: 'Part of a legacy project i have worked on',
+      demo: "https://www.conduent.com/",
       loginDetails: "null",
       image: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23f5f5f5"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" font-family="system-ui" font-size="18" fill="%23666"%3EProject Image%3C/text%3E%3C/svg%3E'
     }
@@ -78,7 +77,7 @@ export default function Projects() {
                   {project.loginDetails}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tech.map((tech, idx) => (
+                  {project.tech?.map((tech, idx) => (
                     <span key={idx} className="text-xs px-2 py-1 bg-gray-100 text-gray-700 rounded">
                       {tech}
                     </span>
